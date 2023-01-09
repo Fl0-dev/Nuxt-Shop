@@ -7,10 +7,12 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nisi eveniet, veritatis quis porro dolorem
             velit, quos laboriosam perferendis eaque asperiores! Perferendis sequi voluptatibus minima pariatur ratione,
             in officiis iure!</p>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
+const { data } = await useFetch('/api/currency/GBP')
 
 </script>
 
